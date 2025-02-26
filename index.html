@@ -23,6 +23,47 @@
 
                 <h1>formulário de matricula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome completo</label>
+                            <input 
+                                id="fullname"
+                                type="text"
+                                placeholder="Qual o nome da criança">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="birth">Data de Nascimento</label>
+                            <input type="date" id="birth" lang="pt-BR">
+                        </div>
+
+                        <div class="select-wreapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="Female">Feminino</option>
+                                <option value="Male">Masculino</option>
+                                <option value="na">Prefiro não responder</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wreapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A crança possui alguma medicação médica que a escola deve estar ciente? (se sim, especifique)"
+                            ></textarea>
+                        </div>
+
+                        <div class="droparea-wreaper">
+                            <input type="file" id="birth-file" name="birth-file">
+                            <img src="Assets/Icons/cloud-upload.svg" alt="">
+                            <p>Clique Aqui para selecionar os arquivos</p>
+                        </div>
+
+                    </fieldset>
+                </form>
             </div>
         </main>
 
